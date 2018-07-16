@@ -1,0 +1,114 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+% Set applicant's personal data for header
+\name{Aksh Gautam}
+\address{B23-119 IIT Mandi\linebreak Himachal Pradesh, India 175005}
+\contacts{+91-8059433601 \linebreak gaksh007@gmail.com \linebreak
+\href{https://www.linkedin.com/in/aksh-gautam/}{linkedin.com/in/aksh-gautam/} \linebreak
+\href{https://github.com/AkshGautam}{github.com/AkshGautam}
+}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+	
+	% Print the content
+	\begin{cvsection}{Education}
+	\bigbreak
+		\begin{cvsubsection}{Indian Institute of Technology Mandi}{Himachal Pradesh, India}{Aug 2015-Jun 2019}	
+		\bigbreak
+			
+			\begin{itemize}
+				\item \textbf{B.Tech in Computer Science and Engineering, CGPA: 7.57}
+				\item \textbf{Relevant Coursework:} Algorithm, Data Structures, Operating Systems, Networking, Database Systems, Pattern Recognition, Artificial Intelligence, Large Application Practicum. System Practicum.
+				\item \textbf{ACM Chapter Coordinator of the Institute} for the academic year 2017-2018.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Work Experience}
+	\bigbreak
+		\begin{cvsubsection}{Google Summer of Code  Developer}{Mifos}{April 2018- Aug 2018}
+		\bigbreak
+			\begin{itemize}
+				\item Added offline data syncing feature in the Mifos Field Officer Application for the cases when the Field officer visits remote areas without network connectivity thus enabling the officer to save the data locally which would be synced automatically to upstream server without manual effort.
+				\item Added the feature to generate and fetch Loan,Savings,Funds,Accounting reports.
+				\item Enhanced the Mifos Individual Collection sheet fragment into a three fragment Tab Layout.
+				\item Looking forward to add Google Cloud Messaging support in the application as a part of open source contribution.
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Software Engineer,Intern}{Promax, Mohali}{Dec 2017- Feb 2018}
+		\bigbreak
+			\begin{itemize}
+				\item Migrated the MySQL patents database to NoSQL based Elasticsearch engine using Logstash thus reducing the query time on bulk data with billions of patent records.
+				\item Worked on both back-end and front-end of the patent search engine.Tested Complex queries such as proximity search,spanning search on Kibana and integrated the queries in the search engine on different patent attributes via Python.
+				\item Added custom queries in the search engine such as proximity search within sentence and paragraph.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	
+	\begin{cvsection}{Languages and Technologies}
+	\bigbreak
+			\begin{itemize}
+				\item \textbf{Programming Languages:} [C++,C,Java,Python](Most experience). [Ruby,Javascript,PHP](Some experience).
+				\item \textbf{IDEs and Programming Tools:} Android Studio, Fish Shell, make, Sublime Text.
+				\item \textbf{Other tools/frameworks} Git, Docker, Ruby on Rails, MySQL.
+			\end{itemize}
+
+	\end{cvsection}
+	
+	\begin{cvsection}{Projects}
+	\bigbreak
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \textbf{Deception in Cyber Security using simulated environment(Ongoing):} Developing a sandbox environment and creating honeypots in a simulated network.
+				\item \textbf{Smart Garbage Bin:} Designed and implemented a prototype garbage bin which recognizes the garbage by capturing the image during dumping and sort the garbage into correct category bin using the pretrained Google inception model.The garbage bin was mobile and could be called to a particular location via an android application.
+	\item \textbf{Optimal wifi connector:} Developed an optimal wifi connector for the institute which suggests users to connect to the best available router inorder to optimally allocate bandwidth and prevent network congestion on a single router.
+	\item \textbf{Analyzed Distributed MongoDB sharded clusters:} Analyzed horizontally scaled distributed MongoDB sharded database containing billions of records with incoming real-time updates. Ran different queries and compared the performance with the vertically scaled MySQL database.
+	\item \textbf{Open source projects:} A contributor in open source organizations such as Mifos(Self service app, Field officer app), Gnome(Gnome To-do).
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Additional Experience}
+	\bigbreak
+		\begin{cvsubsection}{}{}{}	
+		
+			\begin{itemize}
+				\item \textbf{Hackerearth campus ambassador of the institute} for the academic year 2016-2018. 
+				\item \textbf{NSS coordinator of the institute} for the academic year 2015-2016.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+\end{document}
